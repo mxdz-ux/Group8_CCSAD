@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-size: 20px;
     background-color: bisque;
@@ -5,38 +6,38 @@ body {
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
-    
-
 }
 
+/* Styling for the main page heading (h1) */
 h1 {
     text-align: center;
     border-bottom: 2px solid;
     padding-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     color: #420101;
-    
 }
 
+/* Styling for secondary headings (h2) */
 h2 {
     text-transform: capitalize;
     color: black;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1)
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-h2 , h3{
+
+/* Common styling for h2 and h3 elements */
+h2, h3 {
     text-transform: capitalize;
     margin-top: 25px;
     color: #420101;
     position: relative;
     padding-left: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2::before, h3::before , blockquote::before {
+/* Styling for the decorative line before h2, h3, and blockquote */
+h2::before, h3::before, blockquote::before {
     content: '';
     position: absolute;
     left: 0;
@@ -47,24 +48,27 @@ h2::before, h3::before , blockquote::before {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for fourth-level headings (h4) */
 h4 {
     text-transform: capitalize;
     color: black;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Styling for blockquote element */
 blockquote {
     border-left: 5px solid #a52424;
     margin: 20px 0;
     padding: 15px;
     font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     color: #420101;
     background: bisque;
     border-radius: 0 10px 10px 0;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Styling for the 'different-fonts' class, used for text examples */
 .different-fonts {
     background-color: bisque;
     padding: 20px;
@@ -72,26 +76,24 @@ blockquote {
     margin: 20px 0;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     border: 5px solid bisque;
-    
 }
 
+/* Styling for the 'card' class, used for content containers */
 .card {
     background: bisque;
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-
 }
 
+/* Hover effect for the 'card' class */
 .card:hover {
     transform: translateY(-5px);
-
 }
 
-
-
+/* Individual text formatting classes */
 .text-bold {
     font-weight: bold;
 }
@@ -116,13 +118,13 @@ blockquote {
     font-size: 1.5em;
 }
 
-/* Headings Styling */
+/* Styling for headings within content sections */
 h3 {
     color: maroon;
     margin-bottom: 10px;
 }
 
+/* Background color for text examples */
 .text-examples {
-background-color: beige;
-
+    background-color: beige;
 }
