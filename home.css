@@ -1,0 +1,128 @@
+body {
+    font-size: 20px;
+    background-color: bisque;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    
+
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #420101;
+    
+}
+
+h2 {
+    text-transform: capitalize;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1)
+
+}
+h2 , h3{
+    text-transform: capitalize;
+    margin-top: 25px;
+    color: #420101;
+    position: relative;
+    padding-left: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+
+}
+
+h2::before, h3::before , blockquote::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to bottom, #420101, #a52424);
+    border-radius: 2px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    text-transform: capitalize;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+blockquote {
+    border-left: 5px solid #a52424;
+    margin: 20px 0;
+    padding: 15px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #420101;
+    background: bisque;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.different-fonts {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid bisque;
+    
+}
+
+.card {
+    background: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+}
+
+
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-highlight {
+    background-color: yellow;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-color {
+    color: red;
+}
+
+.text-size {
+    font-size: 1.5em;
+}
+
+/* Headings Styling */
+h3 {
+    color: maroon;
+    margin-bottom: 10px;
+}
+
+.text-examples {
+background-color: beige;
+
+}
