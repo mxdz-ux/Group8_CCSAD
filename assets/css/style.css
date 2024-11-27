@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
     width: auto;
     margin-right: 10px;
 }
@@ -88,185 +88,68 @@ body {
 }
 
 /* Hero Section Adjustments */
-.hero {
-    margin-top: 3rem;
-    position: relative;
-    height: 70vh; /* Adjusts the height of the hero section */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-}
-
-/* Background Image Style */
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.75; /* Slightly dim the image for better text visibility */
-}
-
-/* Content on Top of the Image */
+/* Full-Screen Header with Image Slideshow */
 .hero {
     position: relative;
-    height: 70vh; /* Adjust height as needed */
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 90vh; /* Full viewport height */
 }
 
 .hero img {
+    opacity: 50%;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.75; /* Dim background for readability */
+    z-index: 0; /* Behind text content */
 }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Pushes button to the bottom of hero-content */
-    align-items: center;
-    height: 100%;
-    padding-bottom: 2rem; /* Adds spacing from bottom */
+/* Latest News Section */
+#news {
+    margin-top: 5%;
+    padding: 50px 0;
+    background-color: #fff;
 }
 
-.hero .btn {
-    background-color: #f8f9fa; /* Light background color */
-    color: #333; /* Dark text color for better contrast */
-    border: 2px solid #333; /* Border to make it stand out */
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-transform: uppercase; /* Optional: makes text all caps */
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.hero .btn:hover {
-    background-color: #2980b9; /* Dark background on hover */
-    color: #f8f9fa; /* Light text on hover */
-}
-
-
-
-
-/* Container for other sections */
-.container.text-center.mt-5.py-5 {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Heading Style */
-.container.text-center.mt-5.py-5 h1 {
-    font-size: 2rem;
+#news h2 {
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #000;
-    margin-bottom: 1rem;
+    color: #333;
 }
 
-/* Horizontal Rule Style */
-.container.text-center.mt-5.py-5 hr {
-    width: 60%;
-    margin: 1rem auto;
-    border: 1px solid #000;
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Grid */
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    flex-wrap: wrap;
+.card-body {
+    padding: 20px;
 }
 
-.one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48%; /* Each item takes 48% of the container's width */
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    cursor: pointer;
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
 }
 
-/* Image Style */
-.one img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: 0.3s all;
+footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-/* Hover effect */
-.one:hover img {
-    opacity: 0.7;
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Responsive Design: Medium screens (2 images per row) */
-@media (max-width: 992px) {
-    .one {
-        width: 48%;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
 
-/* Small screens (stack images in a single column) */
-@media (max-width: 767px) {
-    .one {
-        width: 100%;
-    }
+.contact-us{
+    margin-top: 5%;
 }
 
-/* Navbar and Content Responsive Adjustments */
-@media (max-width: 992px) {
-    .navbar-nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .navbar-nav button {
-        margin-top: 10px;
-    }
-
-    .navbar-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .logotext h1 {
-        font-size: 1.2rem;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-}
