@@ -153,3 +153,19 @@ footer a:hover {
     margin-top: 5%;
 }
 
+#catalog-search input {
+    border-radius: 25px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+#catalog-categories .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#catalog-categories .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+#featured-catalog .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
