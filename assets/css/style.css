@@ -20,7 +20,7 @@ body {
     padding: 0 20px;
     background-color: #729dc9;
     box-shadow: 0 5px 10px rgba(245, 245, 245, 0.315);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
@@ -96,7 +96,6 @@ body {
 
 .hero img {
     opacity: 100%;
-    margin-top: 5%;
     width: 100%;
     height: 100%;
     object-fit: inherit;
