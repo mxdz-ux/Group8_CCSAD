@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #efebe9;
+    font-family: 'Poppins';
+    overflow-x: hidden; 
+}
+
+.fullscreen-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: burlywood; /* Match body background */
+    box-shadow: #3e2723;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.auth-container {
+    width: 100%;
+    max-width: 560px;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #3e2723;
+}
+
+/* Header */
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4e342e;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background: #fff3e0;
+    border: 1px solid #d7ccc8;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #3e2723;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+    color: #8d6e63;
+}
+
+.form-group input:focus {
+    border-color: #a1887f;
+    box-shadow: 0 0 5px rgba(100, 50, 0, 0.2);
+    outline: none;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #5d4037;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #3e2723;
+}
+
+/* Alerts */
+.alert {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background: #d32f2f;
+    color: #ffebee;
+}
+
+.alert-success {
+    background: #388e3c;
+    color: #e8f5e9;
+}
+
+/* Link */
+.auth-container a {
+    color: #4e342e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-container a:hover {
+    
+    background-color: black;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .auth-container {
+        padding: 20px;
+    }
+    
+    .fullscreen-wrapper {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,191 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #5A3E36;
+    color: white;
+}
+.navbar .logotext {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+.nav-links {
+    z-index: 1000;
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin: 0 0.5rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.nav-links a.active,
+.nav-links a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+.Hamburger {
+    z-index: 1100;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.Hamburger .Bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5eee6;
+    margin: 0;
+    padding: 0;
+    color: #4a2f1f;
+}
+
+/* Page Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Page Title */
+.container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #5c3d2e;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px #dbc5b0;
+}
+
+/* Grid of Book Cards */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Book Card */
+.book-card {
+    background-color: #fff8f0;
+    border: 1px solid #e0cdb8;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(90, 60, 40, 0.15);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Book Cover Image */
+.book-cover {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0cdb8;
+}
+
+/* Book Details */
+.book-details {
+    padding: 20px;
+}
+
+.book-details h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #4b2e1d;
+}
+
+.book-details p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* Book Status Styles */
+.status-approved {
+    color: #2d7731;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #c17e00;
+    font-weight: bold;
+}
+
+/* Pending Label */
+.pending-status {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    background-color: #ffe2b5;
+    color: #a86500;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+/* Return Button */
+.return-btn {
+    margin-top: 12px;
+    background-color: #8b5e3c;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.return-btn:hover {
+    background-color: #6c4329;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #705233;
+}
+
+.empty-state p {
+    font-size: 18px;
+}
+
+.empty-state .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #a97449;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.empty-state .btn:hover {
+    background-color: #8a5c37;
+}
